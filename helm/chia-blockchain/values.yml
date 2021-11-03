@@ -1,0 +1,47 @@
+global:
+  nameOverride:
+  fullnameOverride:
+
+image:
+  repository: ghcr.io/chia-network/chia
+  tag: 1.2.10
+  pullPolicy: IfNotPresent
+
+# -- Main environment variables.
+env:
+  TZ: America/Toronto
+  keys: /key
+  coin_command: chia
+
+# -- Configure the services for the chart here.
+service:
+  main:
+    enabled: true
+    type: ClusterIP
+    ports:
+      node:
+        enabled: true
+        port: 8444
+        protocol: TCP
+      farmer:
+        enabled: true
+        port: 8447
+        protocol: TCP
+
+# -- Configure the ingresses for the chart here.
+ingress:
+  main:
+    enabled: false
+
+# -- Configure persistence for the chart here.
+persistence:
+  # TODO: Change key to a config map
+  key:
+    enabled: false
+    mountPath: /key
+    readOnly: true
+    retain: true
+  blockchain:
+    enabled: false
+    mountPath: /root/.chia
+    retain: true

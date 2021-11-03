@@ -1,0 +1,19 @@
+apiVersion: v2
+appVersion: 1.2.10
+description: Chia is a modern cryptocurrency built from scratch, designed to be efficient, decentralized, and secure.
+name: chia-blockchain
+version: 0.1.0
+kubeVersion: ">=1.16.0-0"
+keywords:
+- chia
+- chia-blockchain
+home: https://github.com/anthonytam/Chia-Forks-Docker/tree/master/helm/chia-blockchain
+icon: https://www.chia.net/img/chia_logo.svg
+sources:
+- https://github.com/Chia-Network/chia-blockchain
+- https://github.com/Chia-Network/chia-docker
+- https://github.com/k8s-at-home/container-images
+dependencies:
+- name: common
+  repository: https://library-charts.k8s-at-home.com
+  version: 4.0.1
