@@ -21,7 +21,7 @@ entries:
     sources:
     - https://github.com/Chia-Network/chia-blockchain
     - https://github.com/Chia-Network/chia-docker
-    - https://github.com/k8s-at-home/container-images
+    - https://github.com/k8s-at-home/library-charts
     urls:
     - https://anthonytam.github.io/Chia-Forks-Docker/helm/chia-blockchain-0.1.0.tgz
     version: 0.1.0
