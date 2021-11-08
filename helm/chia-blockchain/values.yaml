@@ -17,7 +17,6 @@ env:
 service:
   main:
     enabled: true
-    type: ClusterIP
     ports:
       node:
         enabled: true
@@ -27,6 +26,8 @@ service:
         enabled: true
         port: 8447
         protocol: TCP
+      http:
+        enabled: false
 
 # -- Configure the ingresses for the chart here.
 ingress:

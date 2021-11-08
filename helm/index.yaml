@@ -3,14 +3,14 @@ entries:
   chia-blockchain:
   - apiVersion: v2
     appVersion: 1.2.10
-    created: "2021-11-07T00:57:34.831504147-04:00"
+    created: "2021-11-07T20:35:56.848600032-05:00"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
       version: 4.0.1
     description: Chia is a modern cryptocurrency built from scratch, designed to be
       efficient, decentralized, and secure.
-    digest: ac1355a29bce79b2a94e5510c79555ea3d57b57e3af9b4d368b3e5d85bb21c83
+    digest: 9e28d40c3141f3fb3f1e1f82a2fab2d85974d4d8e2fb7d400cad7bd2b62f95d0
     home: https://github.com/anthonytam/Chia-Forks-Docker/tree/master/helm/chia-blockchain
     icon: https://www.chia.net/img/chia_logo.svg
     keywords:
@@ -23,6 +23,6 @@ entries:
     - https://github.com/Chia-Network/chia-docker
     - https://github.com/k8s-at-home/library-charts
     urls:
-    - https://anthonytam.github.io/Chia-Forks-Docker/helm/chia-blockchain-0.1.1.tgz
-    version: 0.1.1
-generated: "2021-11-07T00:57:34.816579508-04:00"
+    - https://anthonytam.github.io/Chia-Forks-Docker/helm/chia-blockchain-0.1.2.tgz
+    version: 0.1.2
+generated: "2021-11-07T20:35:56.834528191-05:00"
