@@ -3,7 +3,7 @@ entries:
   chia-blockchain:
   - apiVersion: v2
     appVersion: 1.2.10
-    created: "2021-11-07T20:35:56.848600032-05:00"
+    created: "2022-03-11T19:45:13.239669247Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -23,6 +23,29 @@ entries:
     - https://github.com/Chia-Network/chia-docker
     - https://github.com/k8s-at-home/library-charts
     urls:
-    - https://anthonytam.github.io/Chia-Forks-Docker/helm/chia-blockchain-0.1.2.tgz
+    - https://anthonytam.github.io/blockchain-helm-charts/chia-blockchain-0.1.2.tgz
     version: 0.1.2
-generated: "2021-11-07T20:35:56.834528191-05:00"
+  pulsarcoin:
+  - apiVersion: v2
+    appVersion: 1.2.10
+    created: "2022-03-11T19:45:13.246343187Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.0.1
+    description: A platform to reward by mining via CPU and reward by staking
+    digest: a3183e028dae2e6a2d5c247675023c1aaf5473a8fada991faefd3fcbf4538197
+    home: https://github.com/anthonytam/blockchain-helm-charts/tree/main/helm/pulsarcoin
+    icon: https://i.imgur.com/7PQvRXL.png
+    keywords:
+    - pulsarcoin
+    - pulsar-coin-cryptocurrency
+    kubeVersion: '>=1.16.0-0'
+    name: pulsarcoin
+    sources:
+    - https://github.com/PulsarCoin/Pulsar-Coin-Cryptocurrency
+    - https://github.com/k8s-at-home/library-charts
+    urls:
+    - https://anthonytam.github.io/blockchain-helm-charts/pulsarcoin-0.1.1.tgz
+    version: 0.1.1
+generated: "2022-03-11T19:45:13.230037722Z"

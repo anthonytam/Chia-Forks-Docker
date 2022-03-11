@@ -1,0 +1,18 @@
+apiVersion: v2
+appVersion: 1.2.10
+description: A platform to reward by mining via CPU and reward by staking 
+name: pulsarcoin
+version: 0.1.1
+kubeVersion: ">=1.16.0-0"
+keywords:
+- pulsarcoin
+- pulsar-coin-cryptocurrency
+home: https://github.com/anthonytam/blockchain-helm-charts/tree/main/helm/pulsarcoin
+icon: https://i.imgur.com/7PQvRXL.png
+sources:
+- https://github.com/PulsarCoin/Pulsar-Coin-Cryptocurrency
+- https://github.com/k8s-at-home/library-charts
+dependencies:
+- name: common
+  repository: https://library-charts.k8s-at-home.com
+  version: 4.0.1

@@ -1,0 +1,40 @@
+global:
+  nameOverride:
+  fullnameOverride:
+
+image:
+  repository: ghcr.io/anthonytam/pulsarcoin:latest
+  tag: latest
+  pullPolicy: Always
+
+# -- Main environment variables.
+env:
+  TZ: America/Toronto
+
+# -- Configure the services for the chart here.
+service:
+  main:
+    enabled: false
+    ports:
+      http:
+        enabled: false
+
+# -- Configure the ingresses for the chart here.
+ingress:
+  main:
+    enabled: false
+
+# -- Configure persistence for the chart here.
+persistence:
+  wallet:
+    enabled: false
+    mountPath: /root/.pulsar/wallets
+    retain: true
+  blockchain:
+    enabled: false
+    mountPath: /root/.pulsar/blocks
+    retain: true
+  chainstate:
+    enabled: false
+    mountPath: /root/.pulsar/chainstate
+    retain: true
