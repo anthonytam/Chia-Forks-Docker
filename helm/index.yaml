@@ -3,7 +3,7 @@ entries:
   bitcoind:
   - apiVersion: v2
     appVersion: "22.0"
-    created: "2022-04-09T04:27:41.129570151Z"
+    created: "2022-04-09T04:33:37.595083504Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -25,12 +25,12 @@ entries:
     - https://bitcoincore.org/
     - https://github.com/k8s-at-home/library-charts
     urls:
-    - https://anthonytam.github.io/blockchain-helm-charts/bitcoind-0.1.0.tgz
+    - https://anthonytam.github.io/blockchain-helm-charts/helm/bitcoind-0.1.0.tgz
     version: 0.1.0
   chia-blockchain:
   - apiVersion: v2
     appVersion: 1.2.10
-    created: "2022-04-09T04:27:41.136650427Z"
+    created: "2022-04-09T04:33:37.601990471Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -50,12 +50,12 @@ entries:
     - https://github.com/Chia-Network/chia-docker
     - https://github.com/k8s-at-home/library-charts
     urls:
-    - https://anthonytam.github.io/blockchain-helm-charts/chia-blockchain-0.1.2.tgz
+    - https://anthonytam.github.io/blockchain-helm-charts/helm/chia-blockchain-0.1.2.tgz
     version: 0.1.2
   pulsarcoin:
   - apiVersion: v2
     appVersion: 1.2.10
-    created: "2022-04-09T04:27:41.14914465Z"
+    created: "2022-04-09T04:33:37.618321876Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -73,6 +73,6 @@ entries:
     - https://github.com/PulsarCoin/Pulsar-Coin-Cryptocurrency
     - https://github.com/k8s-at-home/library-charts
     urls:
-    - https://anthonytam.github.io/blockchain-helm-charts/pulsarcoin-0.1.1.tgz
+    - https://anthonytam.github.io/blockchain-helm-charts/helm/pulsarcoin-0.1.1.tgz
     version: 0.1.1
-generated: "2022-04-09T04:27:41.12099053Z"
+generated: "2022-04-09T04:33:37.588160323Z"
