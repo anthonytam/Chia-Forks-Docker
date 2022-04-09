@@ -2,7 +2,7 @@ apiVersion: v2
 appVersion: "22.0"
 description: Bitcoin is an experimental digital currency that enables instant payments to anyone, anywhere in the world.
 name: bitcoind
-version: 0.1.0
+version: 0.1.1
 kubeVersion: ">=1.16.0-0"
 keywords:
 - bitcoin
