@@ -1,9 +1,36 @@
 apiVersion: v1
 entries:
+  bitcoind:
+  - apiVersion: v2
+    appVersion: "22.0"
+    created: "2022-04-09T04:27:41.129570151Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.0.1
+    description: Bitcoin is an experimental digital currency that enables instant
+      payments to anyone, anywhere in the world.
+    digest: 65a771c2cd84487a4be0aed8924391bf5908cd4e9166cad18da37c985d478095
+    home: https://github.com/anthonytam/blockchain-helm-charts/tree/main/helm/bitcoind
+    icon: https://bitcoincore.org/assets/images/bitcoin_core_logo_colored_reversed.png
+    keywords:
+    - bitcoin
+    - bitcoin-core
+    - bitcoin-d
+    - pulsar-coin-cryptocurrency
+    kubeVersion: '>=1.16.0-0'
+    name: bitcoind
+    sources:
+    - https://github.com/bitcoin/bitcoin
+    - https://bitcoincore.org/
+    - https://github.com/k8s-at-home/library-charts
+    urls:
+    - https://anthonytam.github.io/blockchain-helm-charts/bitcoind-0.1.0.tgz
+    version: 0.1.0
   chia-blockchain:
   - apiVersion: v2
     appVersion: 1.2.10
-    created: "2022-03-11T19:45:13.239669247Z"
+    created: "2022-04-09T04:27:41.136650427Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -28,7 +55,7 @@ entries:
   pulsarcoin:
   - apiVersion: v2
     appVersion: 1.2.10
-    created: "2022-03-11T19:45:13.246343187Z"
+    created: "2022-04-09T04:27:41.14914465Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -48,4 +75,4 @@ entries:
     urls:
     - https://anthonytam.github.io/blockchain-helm-charts/pulsarcoin-0.1.1.tgz
     version: 0.1.1
-generated: "2022-03-11T19:45:13.230037722Z"
+generated: "2022-04-09T04:27:41.12099053Z"

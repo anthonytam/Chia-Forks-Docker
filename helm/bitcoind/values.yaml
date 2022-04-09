@@ -1,0 +1,40 @@
+global:
+  nameOverride:
+  fullnameOverride:
+
+image:
+  repository: ruimarinho/bitcoin-core:latest
+  tag: latest
+  pullPolicy: Always
+
+# -- Main environment variables.
+env:
+  TZ: America/Toronto
+
+# -- Configure the services for the chart here.
+service:
+  main:
+    enabled: false
+    ports:
+      http:
+        enabled: false
+      json-rpc:
+        enabled: true
+        port: 8332
+        protocol: TCP
+      p2p:
+        enabled: true
+        port: 8333
+        protocol: TCP
+
+# -- Configure the ingresses for the chart here.
+ingress:
+  main:
+    enabled: false
+
+# -- Configure persistence for the chart here.
+persistence:
+  blockchain:
+    enabled: false
+    mountPath: /home/bitcoin/.bitcoin
+    retain: true
